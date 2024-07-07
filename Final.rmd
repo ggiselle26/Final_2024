@@ -1,6 +1,6 @@
 ---
 title: "Covid91 vaccine study Final2024"
-author: "Put your name here!"
+author: "Giselle Gonzalez!"
 output: 
   html_document:
     number_sections: true
@@ -26,7 +26,37 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+ $H_0$: The covid921 vaccine is not effective in males  
+ $H_A$: The covid921 vaccine is effective in males 
 
+
+
+###  Methods   
+ Treatment is a catergorical variable 
+ Sex is catagorical variable 
+ I use cat~CAT helper file 
+
+
+###  Descriptive results
+
+
+### Graphical results
+
+```{r}
+males=filter(FinalData,FinalData$sex=="M")
+barchartGC(~treatment + infected,data=males)
+barchartGC(~infected + treatment,data=males,type="percent")
+
+```
+
+### Nummerical results 
+
+
+### Inferential results
+
+
+
+### Conclusion 
 ## Females
 
 
