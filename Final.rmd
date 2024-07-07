@@ -49,8 +49,14 @@ barchartGC(~infected + treatment,data=males,type="percent")
 
 ```
 
+ This shows that males who got the vaccine are less likely to get covid than people who got the placebo.
+ 
 ### Nummerical results 
-
+```{r}
+table1 <- xtabs(~class + Sex, data=davisdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ### Inferential results
 
