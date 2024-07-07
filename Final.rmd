@@ -53,18 +53,62 @@ barchartGC(~infected + treatment,data=males,type="percent")
  
 ### Nummerical results 
 ```{r}
-table1 <- xtabs(~class + Sex, data=davisdata)
+table1 <- xtabs(~treatment + infected,data=males)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+ This shows that 74% of males who took the placebo got covid19, and 26 percent males who got the vaccine  got covid19
+ 
 ### Inferential results
-
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+ Both the chi and fisher have The same p-value which  is 0.000000000000002 which means its lower than 0.05 
 
 ### Conclusion 
+
 ## Females
 
+$H_0$: The covid921 vaccine is not effective in females 
+ $H_A$: The covid921 vaccine is effective in females 
+
+###  Methods   
+ Treatment is a catergorical variable 
+ Sex is catagorical variable 
+ I use cat~CAT helper file 
+
+
+###  Descriptive results
+
+
+### Graphical results
+
+```{r}
+females=filter(FinalData,FinalData$sex=="M")
+barchartGC(~treatment + infected,data=females)
+barchartGC(~infected + treatment,data=females,type="percent")
+
+```
+
+ This shows that males who got the vaccine are less likely to get covid than people who got the placebo.
+### Nummerical results 
+```{r}
+table1 <- xtabs(~treatment + infected,data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+ This shows that 74% of females who took the placebo got covid19, and 26 percent females who got the vaccine  got covid19
+ 
+### Inferential results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+Both the chi and fisher have The same p-value which  is 0.000000000000002 which means its lower than 0.05 
 
 ## LGBTQ
 
