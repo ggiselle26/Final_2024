@@ -65,7 +65,9 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
- Both the chi and fisher have The same p-value which  is 0.000000000000002 which means its lower than 0.05 
+ Both the chi and fisher have The same p-value which  is 0.000000000000002 which means its lower than 0.05   
+The odds ratio is 28.1:1  means that the placebo is 2.81 which  people are more likely to get covid 
+out of the 1 who took the vaccine 
 
 ### Conclusion 
 
@@ -86,7 +88,7 @@ $H_0$: The covid921 vaccine is not effective in females
 ### Graphical results
 
 ```{r}
-females=filter(FinalData,FinalData$sex=="M")
+females=filter(FinalData,FinalData$sex=="F")
 barchartGC(~treatment + infected,data=females)
 barchartGC(~infected + treatment,data=females,type="percent")
 
@@ -108,7 +110,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-Both the chi and fisher have The same p-value which  is 0.000000000000002 which means its lower than 0.05 
+Both the chi and fisher have The same p-value which  is 0. which means its lower than 0.05 the odds ratio is 1.85:1 the placebo is 1.85 and the vaccine is 1 wich it is more likey 
 
 ## LGBTQ
 
@@ -116,9 +118,12 @@ Both the chi and fisher have The same p-value which  is 0.000000000000002 which 
  $H_A$: The covid921 vaccine is effective in lgbtq
 
 
+
 ###  Methods 
 
-
+Treatment is a catergorical variable 
+ Sex is catagorical variable 
+ I use cat~CAT helper file 
 
 ###  Descriptive results
 
