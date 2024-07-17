@@ -112,6 +112,19 @@ Both the chi and fisher have The same p-value which  is 0.000000000000002 which 
 
 ## LGBTQ
 
+ $H_0$: The covid921 vaccine is not effective in lgbtq  
+ $H_A$: The covid921 vaccine is effective in lgbtq
+
+
+###  Methods 
+
+
+
+###  Descriptive results
+
+
+### Graphical results
+
 
 
 ## Druggies
