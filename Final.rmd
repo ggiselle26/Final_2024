@@ -72,7 +72,9 @@ fisher.test(table1)
 
 ### Conclusion 
 
-According to the graph, men who got vaccinated are at a significantly lower risk of contracting COVID-19 compared to those who received the placebo. The data shows that 74% of males who took the placebo contracted the virus, while only 26% of those who got the vaccine did. The chi-square test p-value is 0.0000000000000002, and the Fisher's exact test p-value is 0.000000000000002 which is much less than 0.05, indicating strong statistical significance so we reject the null. The odds ratio of 2.82:1 means that those who received the placebo are 2.82 times more likely to develop COVID-19 compared to those who were vaccinated.
+According to the graph, men who got vaccinated are at a significantly lower risk of contracting COVID-19 compared to those who received the placebo.   
+The data shows that 74% of males who took the placebo contracted the virus, while only 26% of those who got the vaccine did. The chi-square test p-value is 0.0000000000000002, and the Fisher's exact test p-value is 0.000000000000002 which is much less than 0.05, indicating strong statistical significance so we reject the null.   
+The odds ratio of 2.82:1 means that those who received the placebo are 2.82 times more likely to develop COVID-19 compared to those who were vaccinated.
 
 ## Females
 
@@ -97,7 +99,8 @@ barchartGC(~infected + treatment,data=females,type="percent")
 
 ```
 
- This shows that females who got the vaccine are less likely to get covid than people who got the placebo.
+This indicates that females who were vaccinated are less likely to contract COVID-19 than those who were given the placebo.
+ .
 ### Nummerical results 
 ```{r}
 table1 <- xtabs(~treatment + infected,data=females)
@@ -113,7 +116,8 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
- the chi pvalue is 0.0000002 which means its less than 0.05 and the fishers pvalue is 0.0000001 which is also lower the 0.05 so we reject the null hypothesis , the odds ratio is 1.85:1 and the females who took the placebo is 1.85 less likely to get covid then the 1 who took the vaccine 
+ With a chi-square p-value of 0.0000002 and a Fisher’s exact test p-value of 0.0000001, both of which are less than 0.05, we reject the null hypothesis.   
+The odds ratio of 1.85:1 shows that females who took the placebo are 1.85 times less likely to contract COVID-19 compared to those who were vaccinated 
 
 ## LGBTQ
 
@@ -143,7 +147,8 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
 
-According to the graph, the lgbtq who got the vaccine are at a reduced risk of getting COVID compared to lgbtq group  who received the placebo
+According to the graph, LGBTQ people who were vaccinated have a decreased risk of getting COVID-19 compared to those who were given a placebo.
+
 ### Nummerical results 
 ```{r}
 table1 <- xtabs(~treatment + infected,data=LGBTQ)
@@ -151,7 +156,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-
+ This shows that 80% of lgbtq who took the placebo got covid19, and 20 percent of lgbtq who got the vaccine  got covid19
 ### Inferential results
 ```{r}
 chisq.test(table1)
@@ -159,13 +164,13 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-
+The chi-squared pvalue is 0.00002 and the fisher pvalue is 0.0000007 which is lower than 0.05 meaning we reject the null. The odds ratio is 4.27:1, and the lgbtq who took the placebo is 4.27 less likely to get covid then the 1 who took the vaccine
 
 
 ## Druggies
 
 ```{r}
-LGBTQ=filter(FinalData, LGBTQ=="yes")
+DruggiesData=filter(FinalData, DrugUser=="yes")
 
 ```
 
@@ -174,15 +179,44 @@ LGBTQ=filter(FinalData, LGBTQ=="yes")
  infected is catagorical variable 
  I use cat~CAT helper file 
 
+## Descriptive Results
 
-###  Descriptive results
-
-
-### Graphical results
+### Graphical Results
 
 
+```{r}
+barchartGC(~infected+treatment,data=DruggiesData)
+barchartGC(~infected+treatment,data=DruggiesData, type="percent")
+```
+
+
+
+### Numerical Descriptive Results
+
+```{r}
+table4 <- xtabs(~infected + treatment, data=DruggiesData)
+rowPerc(table4)
+colPerc(table4)
+```
+
+
+## Infrenital Results
+
+
+
+```{r}
+chisq.test(table4)
+chisqtestGC(table4)
+fisher.test(table4)
+```
 
 
 
 
-# Overall Results and Conclusions
+### Conclusion 
+
+
+
+
+
+
