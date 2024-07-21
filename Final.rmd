@@ -119,6 +119,11 @@ fisher.test(table1)
  With a chi-square p-value of 0.0000002 and a Fisher’s exact test p-value of 0.0000001, both of which are less than 0.05, we reject the null hypothesis.   
 The odds ratio of 1.85:1 shows that females who took the placebo are 1.85 less likely to contract COVID-19 compared to those who were vaccinated 
 
+### Conclusion 
+This indicates that vaccinated females are less likely to contract COVID-19 than those who received the placebo.  
+The data reveals that 65% of females who took the placebo contracted COVID-19, whereas 35% of vaccinated females contracted the virus. With a chi-square p-value of 0.0000002 and a Fisher’s exact test p-value of 0.0000001—both less than 0.05—we reject the null hypothesis.  
+The odds ratio of 1.85:1 indicates that females who took the placebo are 1.85 times less likely to contract COVID-19 compared to those who were vaccinated.
+
 ## LGBTQ
 
  $H_0$: The covid921 vaccine is not effective in lgbtq  
@@ -166,6 +171,9 @@ fisher.test(table1)
 
 The chi-squared pvalue is 0.00002 and the fisher pvalue is 0.0000007 which is lower than 0.05 meaning we reject the null. The odds ratio is 4.27:1, and the lgbtq who took the placebo is 4.27 less likely to get covid then the 1 who took the vaccine 
 
+### Conclusion 
+According to the graph, LGBTQ individuals who received the vaccine showed a reduced risk of contracting COVID-19 compared to those who received a placebo. Specifically, 80% of LGBTQ individuals who took the placebo contracted COVID-19, while 20% of those who received the vaccine contracted the virus. The chi-squared p-value is 0.00002 and the Fisher's p-value is 0.0000007, both of which are less than 0.05, indicating rejection of the null hypothesis. The odds ratio is 4.27:1, suggesting that LGBTQ individuals who took the placebo are 4.27 times less likely to contract COVID-19 compared to those who received the vaccine.
+
 ## Druggies
 
  $H_0$: The covid921 vaccine is not effective in drug users  
@@ -211,11 +219,11 @@ chisqtestGC(table4)
 fisher.test(table4)
 ```
 
-
+The chi-squared pvalue is 0.0000000001 and the fisher pvalue is 0.000000000003 which is lower than 0.05 meaning we reject the null. The odds ratio is 0.087:1, and the drugusers who took the placebo is 0.08 less likely to get covid then the 1 who took the vaccine 
 
 
 ### Conclusion 
-
+According to the graph, drug users who received the placebo were less likely to contract COVID-19 compared to those who received the vaccine. Specifically, 8.33% of drug users who took the placebo contracted COVID-19, while 91.67% of drug users who received the vaccine contracted the virus. The chi-squared p-value is 0.0000000001 and the Fisher's p-value is 0.000000000003, both of which are less than 0.05, indicating rejection of the null hypothesis. The odds ratio is 0.087:1, suggesting that drug users who took the placebo are 0.087 times less likely to contract COVID-19 compared to those who received the vaccine.
 
 
 
