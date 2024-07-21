@@ -168,12 +168,12 @@ The chi-squared pvalue is 0.00002 and the fisher pvalue is 0.0000007 which is lo
 
 ## Druggies
 
- $H_0$: The covid921 vaccine is not effective in druggies   
- $H_A$: The covid921 vaccine is effective in druggies
+ $H_0$: The covid921 vaccine is not effective in drug users  
+ $H_A$: The covid921 vaccine is effective in drug users
 
 ###  Methods   
  Treatment is a catergorical variable   
- infected is catagorical variable  
+ sex-druguser is catagorical variable  
  I use cat~CAT helper file   
 
 ## Descriptive Results
@@ -190,20 +190,20 @@ barchartGC(~infected+treatment,data=DruggiesData)
 barchartGC(~infected+treatment,data=DruggiesData, type="percent")
 ```
 
+According to the graph, individuals who used the placebo among drug users were less likely to contract COVID-19 compared to those who received the vaccine
 
 
 ### Numerical Descriptive Results
 
 ```{r}
-table4 <- xtabs(~infected + treatment, data=DruggiesData)
+table4 <- xtabs(~treatment+ infected, data=DruggiesData)
 rowPerc(table4)
 colPerc(table4)
 ```
 
+This data shows that 8.33 of drug users who took the placebo got covid19, and 91.67  of drugusers who got the vaccine  got covid19 
 
 ## Infrenital Results
-
-
 
 ```{r}
 chisq.test(table4)
