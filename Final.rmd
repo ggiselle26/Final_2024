@@ -117,7 +117,7 @@ fisher.test(table1)
 ```
 
  With a chi-square p-value of 0.0000002 and a Fisher’s exact test p-value of 0.0000001, both of which are less than 0.05, we reject the null hypothesis.   
-The odds ratio of 1.85:1 shows that females who took the placebo are 1.85 times less likely to contract COVID-19 compared to those who were vaccinated 
+The odds ratio of 1.85:1 shows that females who took the placebo are 1.85 less likely to contract COVID-19 compared to those who were vaccinated 
 
 ## LGBTQ
 
@@ -156,7 +156,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
- This shows that 80% of lgbtq who took the placebo got covid19, and 20 percent of lgbtq who got the vaccine  got covid19
+ This shows that 80% of lgbtq who took the placebo got covid19, and 20 percent of lgbtq who got the vaccine  got covid19 
 ### Inferential results
 ```{r}
 chisq.test(table1)
@@ -164,24 +164,25 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The chi-squared pvalue is 0.00002 and the fisher pvalue is 0.0000007 which is lower than 0.05 meaning we reject the null. The odds ratio is 4.27:1, and the lgbtq who took the placebo is 4.27 less likely to get covid then the 1 who took the vaccine
-
+The chi-squared pvalue is 0.00002 and the fisher pvalue is 0.0000007 which is lower than 0.05 meaning we reject the null. The odds ratio is 4.27:1, and the lgbtq who took the placebo is 4.27 less likely to get covid then the 1 who took the vaccine 
 
 ## Druggies
 
-```{r}
-DruggiesData=filter(FinalData, DrugUser=="yes")
-
-```
+ $H_0$: The covid921 vaccine is not effective in druggies   
+ $H_A$: The covid921 vaccine is effective in druggies
 
 ###  Methods   
- Treatment is a catergorical variable 
- infected is catagorical variable 
- I use cat~CAT helper file 
+ Treatment is a catergorical variable   
+ infected is catagorical variable  
+ I use cat~CAT helper file   
 
 ## Descriptive Results
 
-### Graphical Results
+### Graphical Results```{r}
+
+```{r}
+DruggiesData=filter(FinalData, DrugUser=="yes")
+```
 
 
 ```{r}
