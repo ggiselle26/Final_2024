@@ -223,7 +223,7 @@ The chi-squared pvalue is 0.0000000001 and the fisher pvalue is 0.000000000003 w
 
 
 ### Conclusion 
-According to the graph, drug users who received the placebo were less likely to contract COVID-19 compared to those who received the vaccine. Specifically, 8.33% of drug users who took the placebo contracted COVID-19, while 91.67% of drug users who received the vaccine contracted the virus. The chi-squared p-value is 0.0000000001 and the Fisher's p-value is 0.000000000003, both of which are less than 0.05, indicating rejection of the null hypothesis. The odds ratio is 0.087:1, suggesting that drug users who took the placebo are 0.087 times less likely to contract COVID-19 compared to those who received the vaccine. In the end, the vaccine is affective to drugusers however they would more likely get covid then those who are in the placebo .
+According to the graph, drug users who received the placebo were less likely to contract COVID-19 compared to those who received the vaccine. Specifically, 8.33% of drug users who took the placebo contracted COVID-19, while 91.67% of drug users who received the vaccine contracted the virus. The chi-squared p-value is 0.0000000001 and the Fisher's p-value is 0.000000000003, both of which are less than 0.05, indicating rejection of the null hypothesis. The odds ratio is 0.087:1, suggesting that drug users who took the placebo are 0.087 times less likely to contract COVID-19 compared to those who received the vaccine. In the end, the vaccine is effective to drugusers however they would more likely get covid then those who are in the placebo .
 
 
 
